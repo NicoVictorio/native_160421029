@@ -22,10 +22,22 @@
         android:label="Game"
         tools:layout="@layout/fragment_game">
         <action
-            android:id="@+id/action_main_fragment"
-            app:destination="@id/mainFragment" />
+            android:id="@+id/action_result_fragment"
+            app:destination="@id/resultFragment" />
         <argument
             android:name="player_name"
             app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.vincentui.native_160421072_160421029.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="final_score"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_main_fragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
